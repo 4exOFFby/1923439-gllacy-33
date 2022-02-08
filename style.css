@@ -300,7 +300,6 @@ body {
 
 .card-gifts-malina {
   background-image: url("./images/png/malina-group.png");
-
 }
 
 .card-gifts-marshmallow {
@@ -384,6 +383,7 @@ body {
 .advantages {
   background-image: url("./images/png/vufle-background.png");
   background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 80px;
 }
 
@@ -398,6 +398,7 @@ body {
   padding-top: 80px;
   padding-left: 87px;
   padding-right: 88px;
+  box-sizing: border-box;
 }
 
 .advantages-description {
@@ -428,21 +429,14 @@ body {
 }
 
 .news-and-subcribe {
-  background-image: url("./images/png/background-article.png");
-  background-repeat: no-repeat;
-  border-radius: 16px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 76px;
 }
 
 .news {
   padding: 32px;
-}
-
-.subscribe {
-  padding: 32px;
-  padding-bottom: 0;
 }
 
 .article-title {
@@ -458,15 +452,28 @@ body {
   line-height: 30px;
   margin: 0px;
   width: 303px;
-  padding-bottom: 63px;
+  padding-bottom: 65px;
+}
+
+.news {
+  background-image: url("./images/png/background-article.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  width: 570px;
+  box-sizing: border-box;
+  padding-bottom: 0px;
 }
 
 .subscribe {
   background-image: url("./images/png/background-subscribe.png");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   padding-left: 32px;
   padding-top: 32px;
+  padding: 32px;
+  padding-bottom: 0;
 }
 
 .subscribe-form-input {
@@ -495,4 +502,82 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 34px;
+}
+
+.dostavka {
+  background-image: url("./images/png/dostavka-background.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding-left: 100px;
+  display: flex;
+}
+
+.dostavka-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  width: 456px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.dostavka-description {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  width: 365px;
+  vertical-align: center;
+  margin-bottom: 163px;
+}
+
+.dostavka-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 167px;
+}
+
+.dpstavka-form {
+  background-color: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  display: flex;
+  margin: 64px;
+  margin-left: 0;
+  padding: 40px;
+  padding-bottom: 0;
+  border-radius: 8px;
+}
+
+.form-dostavka-fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form-legend {
+  width: 360px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 32px;
+}
+
+.date {
+  width: 117px;
+  height: 48px;
+  padding: 14px 16px;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.phone {
+  width: 287px;
+  height: 48px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+}
+
+.adress {
+  width: 420px;
+  height: 48px;
+  padding: 14px 16px;
+  box-sizing: border-box;
 }
