@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body class="page-color-pink">
     <div class="page-container">
@@ -210,7 +210,7 @@
                   <label><span class="visually-hidden">Введите вашу электронную почту</span>
                   <input class="subscribe-form-input" type="email" name="email-subscribe" placeholder="email@example.com">
                   </label>
-                  <input class="button subscribe-submite" type="submit" value="Отправить">
+                  <input class="button button-submite" type="submit" value="Отправить">
                 </form>
             </article>
           </section>
@@ -220,20 +220,33 @@
               <p class="dostavka-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом,
                 и курьер привезёт вам ваш заказ в течение часа!</p>
             </div>
-              <form class="dpstavka-form" action="#" method="get">
+              <form class="dostavka-form" action="#" method="get">
                 <fieldset class="form-dostavka-fieldset">
                   <legend class="form-legend">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</legend>
-                  <lebel> Дата
-                  <input class="date" name="date" type="date">
+                  <div class="input-wrapper">
+                  <lebel class="label-wrapper"> Дата
+                  <input class="input-dostavka date" name="date" type="date">
                 </lebel>
-                <label> Телефон
-                <input class="phone" name="phone" type="tel">
+                <label class="label-wrapper"> Телефон
+                <input class="input-dostavka phone" name="phone" type="tel">
               </label>
-              <label> Адрес
-                <input class="adress" name="adress" type="text">
+              <label class="label-wrapper"> Адрес
+                <input class="input-dostavka adress" name="adress" type="text">
               </label>
+              </div>
               </fieldset>
+              <input class="button button-submite" type="submit" value="Отправить">
               </form>
+          </section>
+          <section class="contacts">
+            <address class="contacts-info">
+              <h3 class="contacts-info-title">Адрес главного офиса и офлайн-магазина:</h3>
+              <p class="contacts-info-description">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+              <h3 class="contacts-info-title">Для заказов по телефону:</h3>
+              <a class="contacts-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              <p class="contacts-info-description">(с 10 до 20 ежедневно)</p>
+              <a class="button button-submite feedback-button" href="#">Форма обратной связи</a>
+            </address>
           </section>
           </main>
         </div>
