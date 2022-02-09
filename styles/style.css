@@ -411,6 +411,7 @@ body {
 .advantages-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
   margin: 0;
   padding: 0;
   padding-left: 64px;
@@ -422,7 +423,7 @@ body {
   display: flex;
   align-items: flex-start;
   width: 516px;
-  margin-bottom: 40px;
+  margin-bott1om: 40px;
 }
 
 .advantages-item:last-child {
