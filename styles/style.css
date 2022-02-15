@@ -220,8 +220,20 @@ body {
 }
 
 .card-img {
-  opacity: 0.4;
+  background-image: url("../images/png/Подложка.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: 100%;
 }
+
+.card-img-current {
+  background-image: url("../images/png/Подложка.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 
 .card-img.card-img-current{
   opacity: 1;
