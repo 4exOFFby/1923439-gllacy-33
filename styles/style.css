@@ -560,7 +560,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
   column-gap: 20px;
-  row-gap: 43px;
+  row-gap: 40px;
   margin: 0;
   padding: 0;
   padding-left: 42px;
