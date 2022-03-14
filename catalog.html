@@ -54,13 +54,7 @@
                 <a class="breadcrumbs-link breadcrumbs-link-active" href="#">Главная</a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">&raquo;</a>
-              </li>
-              <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link breadcrumbs-link-active" href="#">Каталог</a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">&raquo;</a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="#">Сливочное</a>
@@ -76,46 +70,65 @@
                   <li class="sorting-item">
               <label class="label-sorting-wrapper"><span class="visually-hidden">Сортировка:</span>
                 <select class="sorting-select">
-                  <option cpass="sorting-option">По популярности</option>
-                  <option cpass="sorting-option">По цене</option>
-                  <option cpass="sorting-option">По жирности</option>
+                  <option cpass="sorting-option">по популярности</option>
+                  <option cpass="sorting-option">по цене</option>
+                  <option cpass="sorting-option">по жирности</option>
                 </select>
               </li>
               </ul>
               </label>
               </fieldset>
-              <fieldset class="sorting-fieldset">
-                <legend class="sorting-legend">Цена: 100 ₽ – 500 ₽</legend>
-              <label class="label-sorting-wrapper"><span class="visually-hidden">Цена: 100 ₽ – 500 ₽</span>
+              <fieldset class="sorting-fieldset sorting-fieldset-range">
+                <p class="range-input-wrapper">
+                  <label class="range-input-price-description range-label" for="input-price">Цена:</label>
+                  <input class="range-input-price" id="input-price" type="number" value="100">
+                  <span class="range-input-price-description cash-description-min">₽</span>
+                  <span class="range-input-price-description cash-description-line">–</span>
+                  <input class="range-input-price" id="input-price" type="number" value="500">
+                  <span class="range-input-price-description cash-description-max">₽</span>
+                </p>
+              <label class="label-sorting-wrapper" for="range-price"><span class="visually-hidden">выбирите диапозон цен</span></label>
               <ul class="sorting-list sorting-list-price">
                 <li class="sorting-item">
-                <input class="sorting-input-price" name="price" type="range" min="100" max="1000" value="" step="50">
+                <div class="range-line" id="range-price">
+                  <div class="range-scale">
+                    <button class="range-button range-button-min"></button>
+                    <button class="range-button range-button-max"></button>
+                  </div>
+                </div>
                 </li>
               </ul>
-              </label>
               </fieldset>
-              <fieldset class="sorting-fieldset">
+              <fieldset class="sorting-fieldset sorting-fieldset-range">
               <legend class="sorting-legend">Жирность:</legend>
               <ul class="sorting-list">
                 <li class="sorting-item">
                   <label class="sorting-label">
-                    <input class="sorting-input" name="pig" type="radio"  value="0%">
-                  </label>0%
+                    <input class="sorting-input visually-hidden" name="pig" type="radio"  value="0%">
+                    <span class="control-mark"></span>
+                    0%
+                  </label>
                 </li>
                 <li class="sorting-item">
                 <label class="sorting-label">
-                <input class="sorting-input" name="pig" type="radio"  value="до 10%">
-                </label>до 10%
+                <input class="sorting-input visually-hidden" name="pig" type="radio"  value="до 10%" checked>
+                <span class="control-mark"></span>
+                до 10%
+                </label>
                 </li>
                 <li class="sorting-item">
                 <label class="sorting-label">
-                <input class="sorting-input" name="pig" type="radio"  value="до 30%">
-                </label>до 30%
+                <input class="sorting-input visually-hidden" name="pig" type="radio"  value="до 30%">
+                <span class="control-mark"></span>
+                до 30%
+                </label>
                 </li>
                 <li class="sorting-item">
                 <label class="sorting-label">
-                <input class="sorting-input" name="pig" type="radio"  value="выше 30%">
-                </label>выше 30%
+                <input class="sorting-input visually-hidden" name="pig" type="radio"  value="выше 30%">
+                <span class="control-mark"></span>
+                выше 30%
+                </label>
                 </li>
               </ul>
             </fieldset>
@@ -124,29 +137,39 @@
               <ul class="sorting-list">
                 <li class="sorting-item">
                 <label class="sorting-label">
-                <input class="sorting-input" name="choklad" type="checkbox"  value="шоколадные">
-                </label>шоколадные
+                <input class="sorting-input visually-hidden" name="choklad" type="checkbox"  value="шоколадные" checked>
+                <span class="control-mark"></span>
+                шоколадные
+                </label>
+                </li>
+                <li class="sorting-item sorting-item-deferrent">
+                <label class="sorting-label">
+                <input class="sorting-input visually-hidden" name="sugar" type="checkbox"  value="сахарные посыпки" checked>
+                <span class="control-mark"></span>
+                сахарные посыпки
+                </label>
                 </li>
                 <li class="sorting-item">
                 <label class="sorting-label">
-                <input class="sorting-input" name="sugar" type="checkbox"  value="сахарные посыпки">
-                </label>сахарные посыпки
+                <input class="sorting-input visually-hidden" name="fruts" type="checkbox"  value="фрукты">
+                <span class="control-mark"></span>
+                фрукты
+                </label>
                 </li>
                 <li class="sorting-item">
                 <label class="sorting-label">
-                <input class="sorting-input" name="fruts" type="checkbox"  value="фрукты">
-                </label>фрукты
+                <input class="sorting-input visually-hidden" name="sirops" type="checkbox"  value="сиропы">
+                <span class="control-mark"></span>
+                сиропы
+                </label>
                 </li>
                 <li class="sorting-item">
                 <label class="sorting-label">
-                <input class="sorting-input" name="sirops" type="checkbox"  value="сиропы">
-                </label>сиропы
+                  <input class="sorting-input visually-hidden" name="jam" type="checkbox"  value="джемы">
+                  <span class="control-mark"></span>
+                  джемы
+                </label>
                 </li>
-                <li class="sorting-item">
-                <label class="sorting-label">
-                  <input class="sorting-input" name="jam" type="checkbox"  value="джемы">
-                </label>джемы
-                  </li>
               </ul>
             </fieldset>
             <ul class="sorting-list sorting-item-button">
