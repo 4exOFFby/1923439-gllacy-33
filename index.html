@@ -489,10 +489,24 @@
             </section>
           </footer>
         </div>
-        <div class="modal-container">
+        <div class="modal-container modal-close">
           <div class="modal-contant">
             <h3 class="modal-title">Мы обязательно ответим вам!</h3>
-            <button class="modal-close-button" type="button"></button>
+            <button class="modal-close-button" type="button"><svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.4">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
+              </g>
+              </svg>
+            </button>
+            <form class="modal-form" id="modal-form" action="#" method="post">
+              <label class="modal-input-label" for="modal-input-name"><span class="visually-hidden">Введите Ваше имя</span></label>
+              <input class="modal-input" id="modal-input-name" type="text" placeholder="Имя и фамилия">
+              <label class="modal-input-label" for="modal-input-email"><span class="visually-hidden">Введите Ваш email</span></label>
+              <input class="modal-input" id="modal-input-email" type="email" placeholder="email@example.com">
+              <label class="modal-input-label" for="modal-input-name"><span class="visually-hidden">Введите Ваше имя</span></label>
+              <textarea class="modal-input modal-input-text" form="modal-form" id="modal-input-name">В свободной форме</textarea>
+              <input class="input-submit" type="submit" value="Отправить">
+            </form>
           </div>
         </div>
       </body>
