@@ -677,8 +677,8 @@ body {
 
 .popover-search-close {
   position: absolute;
-  top: 1px;
-  right: 16px;
+  top: 38px;
+  right: 30px;
   width: 16px;
   height: 16px;
   border: none;
