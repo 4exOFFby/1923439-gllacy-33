@@ -14,7 +14,39 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="#">Каталог</a>
+              <a class="navigation-link navigation-catalog-link navigation-link-current" href="#">Каталог</a>
+              <div class="popover-catalog">
+                <ul class="popover-catalog-list popover-catalog-list-new">
+                  <li class="popover-catalog-item popover-catalog-item-new">
+                    <a class="popover-catalog-link popover-catalog-link-new" href="#">
+                      Новинки
+                    </a>
+                    <div class="popover-catalog-decor"></div>
+                  </li>
+                </ul>
+                  <ul class="popover-catalog-list">
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">
+                      Сливочное
+                    </a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">
+                      Щербеты
+                    </a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">
+                      Фруктовый лед
+                    </a>
+                  </li>
+                  <li class="popover-catalog-item">
+                    <a class="popover-catalog-link" href="#">
+                      Мелорин
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -29,20 +61,98 @@
             </li>
             <li class="navigation-item navigation-user-item">
               <a class="navigation-link-search" href="#">
-                <img class="search-icon" src="./images/svg/Search-icon.svg" width="15" height="15" alt="поиск">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.91286 7.24625C1.91286 4.30073 4.30068 1.91292 7.2462 1.91292C10.1917 1.91292 12.5795 4.30073 12.5795 7.24625C12.5795 8.68547 12.0095 9.99154 11.0828 10.951C11.0582 10.9695 11.0346 10.99 11.0123 11.0124C10.9899 11.0347 10.9694 11.0583 10.9509 11.0829C9.99146 12.0095 8.6854 12.5796 7.2462 12.5796C4.30068 12.5796 1.91286 10.1918 1.91286 7.24625ZM11.4653 12.4082C10.3161 13.3487 8.84703 13.9129 7.2462 13.9129C3.5643 13.9129 0.579529 10.9281 0.579529 7.24625C0.579529 3.56435 3.5643 0.579582 7.2462 0.579582C10.9281 0.579582 13.9129 3.56435 13.9129 7.24625C13.9129 8.84711 13.3486 10.3162 12.4081 11.4654L15.2176 14.2749C15.4779 14.5352 15.4779 14.9573 15.2176 15.2177C14.9572 15.478 14.5351 15.478 14.2748 15.2177L11.4653 12.4082Z" fill="#2D3440"/>
+                  </svg>
               </a>
+              <div class="popover-search">
+                <label class="popover-search-label"><span class="visually-hidden">Поиск по сайту</span>
+                  <input class="popover-search-input" type="text" placeholder="Поиск по сайту">
+                  <button class="popover-search-close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.4">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z"/>
+                      </g>
+                      </svg>
+                  </button>
+                </label>
+              </div>
             </li>
             <li class="navigation-item navigation-user-item">
               <a class="navigation-link-log-in" href="#">
-                <img class="log-in-icon" src="./images/svg/Log-in-icon.svg" width="15" height="15" alt="вход в личный кабинет">
+                <svg class="log-in-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.20837 0.874999C9.20837 0.506809 9.50685 0.208332 9.87504 0.208332H12.875C13.4497 0.208332 14.0008 0.436605 14.4071 0.842934C14.8134 1.24926 15.0417 1.80036 15.0417 2.375V12.875C15.0417 13.4496 14.8134 14.0007 14.4071 14.4071C14.0008 14.8134 13.4497 15.0417 12.875 15.0417H9.87504C9.50685 15.0417 9.20837 14.7432 9.20837 14.375C9.20837 14.0068 9.50685 13.7083 9.87504 13.7083H12.875C13.0961 13.7083 13.308 13.6205 13.4643 13.4643C13.6206 13.308 13.7084 13.096 13.7084 12.875V2.375C13.7084 2.15399 13.6206 1.94202 13.4643 1.78574C13.308 1.62946 13.0961 1.54167 12.875 1.54167H9.87504C9.50685 1.54167 9.20837 1.24319 9.20837 0.874999ZM5.65359 3.40359C5.91394 3.14324 6.33605 3.14324 6.5964 3.40359L10.3418 7.14903C10.4652 7.27002 10.5417 7.43857 10.5417 7.625C10.5417 7.81143 10.4652 7.97999 10.3418 8.10098L6.5964 11.8464C6.33605 12.1068 5.91394 12.1068 5.65359 11.8464C5.39324 11.5861 5.39324 11.1639 5.65359 10.9036L8.26552 8.29167H0.875041C0.506851 8.29167 0.208374 7.99319 0.208374 7.625C0.208374 7.25681 0.506851 6.95833 0.875041 6.95833H8.26552L5.65359 4.3464C5.39324 4.08605 5.39324 3.66394 5.65359 3.40359Z" fill="#2D3440"/>
+                  </svg>
                   Вход
                 </a>
+                <div class="popover-log-in">
+                  <h3 class="popover-log-in-title">Личный кабинет</h3>
+                  <form class="popover-log-in-form" action="#" method="post">
+                    <label class="popover-log-in-label"><span class="visually-hidden">Введите Ваш email</span>
+                      <input class="popover-log-in-input" type="email" placeholder="email@example.com">
+                    </label>
+                    <label class="popover-log-in-label"><span class="visually-hidden">Введите Ваш пароль</span>
+                      <input class="popover-log-in-input log-in-input-password" type="password" value="123456">
+                    </label>
+                    <label class="popover-log-in-label popover-log-in-label-submit" for="popover-submit"><span class="visually-hidden">Войдите в Ваш кабинет</span></label>
+                      <input class="popover-log-in-submit" id="popover-submit" type="submit" value="Войти">
+                  </form>
+                  <div class="popover-log-in-link-wrapper">
+                    <a class="popover-log-in-link">Забыли пароль?</a>
+                    <a class="popover-log-in-link">Регистрация</a>
+                  </div>
+              </div>
               </li>
               <li class="navigation-item navigation-user-item">
                 <a class="navigation-link-basket navigation-link-basket-ful" href="#">
-                  <img class="log-in-icon" src="./images/svg/full-trash.svg" width="15" height="15" alt="Карзина">
+                    <svg class="log-in-icon" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.645752 1.15641C0.645752 0.788223 0.944229 0.489746 1.31242 0.489746H3.91987C4.23762 0.489746 4.51121 0.714003 4.57357 1.02557L5.11867 3.74906H15.6534C15.8521 3.74906 16.0404 3.83767 16.167 3.99076C16.2937 4.14384 16.3455 4.34544 16.3082 4.54061L15.2653 10.0097L15.2643 10.0147L15.2643 10.0147C15.1742 10.4683 14.9275 10.8757 14.5672 11.1657C14.2088 11.4542 13.7609 11.6082 13.301 11.601H6.97627C6.5164 11.6082 6.06842 11.4542 5.71003 11.1657C5.34996 10.8759 5.10325 10.4686 5.01307 10.0153L5.01296 10.0147L3.9242 4.57495C3.91972 4.5567 3.916 4.53816 3.91307 4.51936L3.37341 1.82308H1.31242C0.944229 1.82308 0.645752 1.5246 0.645752 1.15641ZM6.52837 12.8757C5.80043 12.8757 5.21031 13.4658 5.21031 14.1938C5.21031 14.9217 5.80043 15.5118 6.52837 15.5118C7.25632 15.5118 7.84644 14.9217 7.84644 14.1938C7.84644 13.4658 7.25632 12.8757 6.52837 12.8757ZM13.6984 12.8757C12.9704 12.8757 12.3803 13.4658 12.3803 14.1938C12.3803 14.9217 12.9704 15.5118 13.6984 15.5118C14.4263 15.5118 15.0164 14.9217 15.0164 14.1938C15.0164 13.4658 14.4263 12.8757 13.6984 12.8757Z" fill="#2D3440"/>
+                      </svg>
                   2 товара
                 </a>
+                <div class="popover-basket">
+                  <h3 class="popover-log-in-title">Корзина</h3>
+                  <ul class="popover-basket-list">
+                    <li class="popover-basket-item">
+                      <a class="popover-basket-link" href="#">
+                        <img class="popover-basket-img" src="./images/jpg/mursmallow-basket-1.jpg" width="46" height="46" alt="Малиновое мороженное в карзине">
+                        <div class="title-description-wrapper">
+                          <h4 class="popover-basket-title">Малинка</h4>
+                          <p class="popover-basket-description">1 кг х 310 ₽</p>
+                        </div>
+                        <span class="popover-basket-price">310 ₽</span>
+                        <button class="popover-basket-delete" type="button">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.4">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
+                            </g>
+                            </svg>
+                        </button>
+                      </a>
+                    </li>
+                    <li class="popover-basket-item">
+                      <a class="popover-basket-link" href="#">
+                        <img class="popover-basket-img" src="./images/jpg/mursmallow-basket-2.jpg" width="46" height="46" alt="Малиновое мороженное в карзине">
+                        <div class="title-description-wrapper">
+                          <h4 class="popover-basket-title">Бабл-гам</h4>
+                          <p class="popover-basket-description">1,5 кг х 320 ₽</p>
+                        </div>
+                        <span class="popover-basket-price">480 ₽</span>
+                        <button class="popover-basket-delete" type="button">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.4">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
+                            </g>
+                            </svg>
+                        </button>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="by-total-wrapper">
+                    <a class="popover-basket-by-button" href="#">Оформить заказ</a>
+                    <span class="popover-basket-by-total">Итого: 790 ₽</span>
+                  </p>
+                </div>
               </li>
             </ul>
           </nav>
@@ -57,7 +167,7 @@
                 <a class="breadcrumbs-link breadcrumbs-link-active" href="#">Каталог</a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Сливочное</a>
+                <a class="breadcrumbs-link">Сливочное</a>
               </li>
             </ul>
             <h1 class="page-title">Сливочное мороженое</h1>
@@ -454,5 +564,6 @@
             </section>
           </footer>
         </div>
+        <script src="./js/main.js"></script>
       </body>
       </html>
