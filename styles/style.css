@@ -676,15 +676,22 @@ body {
 }
 
 .popover-search-close {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 22px;
   position: absolute;
-  top: 38px;
-  right: 30px;
-  width: 16px;
-  height: 16px;
+  top: 37px;
+  right: 25px;
   border: none;
   cursor: pointer;
   background-color: transparent;
   opacity: 0.4;
+}
+
+.popover-search-input:focus + .popover-search-close {
+  display: flex;
 }
 
 .popover-search-close:hover {
@@ -1038,7 +1045,7 @@ body {
 }
 
 .card-gifts-malina {
-  background-image: url("../images/png/malina.png");
+  background-image: url("../images/png/raspberries.png");
   background-position: bottom 1px right 13px;
   background-repeat: no-repeat;
 
@@ -1303,6 +1310,65 @@ body {
   color: #B9B9B9;
 }
 
+.subscribe-form-input:hover,
+.input-delivery:hover,
+.popover-log-in-input:hover,
+.modal-input:hover,
+.popover-search-input:hover {
+  background: #FFFFFF;
+  outline: 1px solid #2D3440;
+  outline-offset: -1px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subscribe-form-input:focus,
+.input-delivery:focus,
+.popover-log-in-input:focus,
+.modal-input:focus,
+.popover-search-input:focus {
+  background: #FFFFFF;
+  outline: 2px solid #2D3440;
+  outline-offset: -1px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subscribe-form-input:invalid,
+.input-delivery:invalid,
+.popover-log-in-input:invalid,
+.modal-input:invalid,
+.popover-search-input:invalid {
+  background: #FFFFFF;
+  outline: 2px solid #EA5454;
+  outline-offset: -2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subscribe-form-input:invalid:hover,
+.input-delivery:invalid:hover,
+.popover-log-in-input:invalid:hover,
+.modal-input:invalid:hover,
+.popover-search-input:invalid:hover {
+  background: #FFFFFF;
+  outline: 3px solid #EA5454;
+  outline-offset: -2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subscribe-form-input:disabled,
+.input-delivery:disabled,
+.popover-log-in-input:disabled,
+.modal-input:disabled {
+  background: #E7E7E7;
+  outline: 1px solid #B9B9B9;
+  outline-offset: -2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 .subscribe-description {
   width: 506px;
   margin: 0;
@@ -1357,8 +1423,8 @@ body {
   height: 48px;
 }
 
-.dostavka {
-  background-image: url("../images/png/dostavka-background.jpg");
+.delivery {
+  background-image: url("../images/png/delivery-background.jpg");
   background-size: cover;
   border-radius: 16px;
   display: flex;
@@ -1369,7 +1435,7 @@ body {
 }
 
 
-.dostavka-title {
+.delivery-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -1379,7 +1445,7 @@ body {
 
 }
 
-.dostavka-description {
+.delivery-description {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
@@ -1387,7 +1453,7 @@ body {
 
 }
 
-.dostavka-wrapper {
+.delivery-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1396,7 +1462,7 @@ body {
 
 
 
-.dostavka-form {
+.delivery-form {
   width: 500px;
   height: 406px;
   box-sizing: border-box;
@@ -1410,7 +1476,7 @@ body {
 
 }
 
-.input-dostavka {
+.input-delivery {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1421,7 +1487,7 @@ body {
 }
 
 
-.form-dostavka-fieldset {
+.form-delivery-fieldset {
   border: none;
   padding: 0;
 }
@@ -1434,7 +1500,7 @@ body {
 }
 
 
-.input-dostavka-date {
+.input-delivery-date {
   width: 117px;
   height: 48px;
   padding: 11px 15px;
@@ -1449,19 +1515,19 @@ body {
 
 }
 
-.input-dostavka-date::-webkit-outer-spin-button,
-.input-dostavka-date::-webkit-inner-spin-button {
+.input-delivery-date::-webkit-outer-spin-button,
+.input-delivery-date::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.input-dostavka-phone {
+.input-delivery-phone {
   width: 287px;
   height: 48px;
   padding: 14px 16px;
   box-sizing: border-box;
 }
 
-.input-dostavka-adress {
+.input-delivery-adress {
   width: 420px;
   height: 48px;
   padding: 14px 16px;
@@ -1577,7 +1643,7 @@ body {
   align-items: flex-end;
 }
 
-.input-dostavka {
+.input-delivery {
   margin-top: 8px;
 }
 
