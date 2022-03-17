@@ -52,6 +52,7 @@ button_modal_close.addEventListener('click', function() {
 
 // находим кнопку
 const slider_button_next = document.querySelector('.slider-button-next');
+const slider_button_prev = document.querySelector('.slider-button-prev');
 // находим все изображения с классом .img
 const slides_all = document.querySelectorAll('.by-online-images-item');
 // счетчик начинается с 1 т.к. текущее изображение с i = 0 сейчас показано
@@ -75,6 +76,27 @@ slider_button_next.addEventListener('click', () => {
 
   background_blue.classList.toggle('background-blue');
   background_blue.classList.toggle('background-gold');
+  background_blue.classList.toggle('page-color-pink');
+
+});
+
+slider_button_prev.addEventListener('click', () => {
+  // количество всех изображений
+  const imgCount = slides_all.length;
+  if (i == imgCount) {
+    i = 0;
+  }
+  // изображение, которое отображается в данный момент
+  const slides_current = document.querySelector('.by-online-images-item-current');
+  // скрыть текущее изображение
+  slides_current.classList.remove('by-online-images-item-current');
+  // показать следующее изображение
+  slides_all[i].classList.add('by-online-images-item-current');
+  // увеличить счетчик
+
+  i++;
+
+  background_blue.classList.toggle('background-blue');
   background_blue.classList.toggle('page-color-pink');
 
 });
