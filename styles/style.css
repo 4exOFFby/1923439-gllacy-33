@@ -612,6 +612,7 @@ body {
   background-color: transparent;
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
 .popover-basket-title {
@@ -1410,6 +1411,17 @@ body {
   outline-offset: -2px;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.popover-basket-by-button:hover {
+  background: #ffffff;
+  color: #2D3440;
+  outline: 4px solid #EA5454;
+  outline-offset: -4px;
+}
+
+.popover-basket-delete:hover {
+  opacity: 0.6;
 }
 
 .subscribe-form-input,
